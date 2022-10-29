@@ -21,6 +21,7 @@ export async function load_csv_file(options: ImportCsvOptions) {
     const parser = parse(fileContent, {
         columns: true,
         skip_empty_lines: false,
+        cast_date: true
     });
     const records = [];
     for await (const record of parser) {
