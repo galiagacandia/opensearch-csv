@@ -1,8 +1,12 @@
 {
   "name": "opensearch-csv",
-  "version": "1.0.1",
+  "version": "1.0.3",
   "description": "Simple Opensearch CSV importer",
   "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "files": [
+    "/dist"
+  ],
   "scripts": {
     "start": "tsc && node dist/index.js",
     "test": "jest"
